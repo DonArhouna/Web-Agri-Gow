@@ -1,0 +1,69 @@
+/* navbar.component.css */
+
+/* Hauteur et positionnement de la navbar */
+.navbar {
+  background-color: #aed6f1 !important; /* Couleur de fond */
+  position: fixed; /* Fixer la position de la navbar */
+  top: 0;
+  left: 250px; /* Positionné à droite de la sidebar */
+  width: calc(100% - 250px); /* Ajuster la largeur en fonction de la sidebar */
+  height: 60px; /* Diminuer la hauteur de la navbar */
+  z-index: 1000; /* Assurez-vous que la navbar est au-dessus des autres éléments */
+  display: flex;
+  align-items: center; /* Centrer verticalement les éléments */
+}
+
+/* Conteneur principal pour le positionnement */
+.container-fluid {
+  display: flex;
+  align-items: center; /* Centrer verticalement */
+  height: 100%; /* Hauteur complète de la navbar */
+}
+
+/* Formulaire de recherche */
+.search-form {
+  margin-top: 0;
+  margin-left: 0; /* Positionner à gauche complètement */
+  margin-right: auto; /* Écarter des autres éléments à droite */
+}
+
+.input-group .form-control {
+  border-radius: 50px; /* Bordures arrondies */
+  padding-right: 40px; /* Espace pour l'icône */
+}
+
+.input-group .input-group-text {
+  display: flex;
+  align-items: center; /* Centre verticalement l'icône */
+  justify-content: center; /* Centre horizontalement l'icône */
+  font-size: 18px; /* Ajuste la taille de l'icône */
+  color: #111213; /* Ajuste la couleur de l'icône */
+  background-color: transparent;
+  border: none;
+  position: absolute; /* Positionne l'icône à droite du champ */
+  right: 10px;
+}
+
+.input-group .input-group-text i {
+  margin-top: 5px;
+}
+
+
+/* Icône utilisateur avec nom */
+.user-icon {
+  display: flex;
+  align-items: center; /* Centrer verticalement */
+  margin-left: auto; /* Pousser à droite */
+}
+
+.user-icon i {
+  margin-bottom: 10px;
+  font-size: 24px; /* Taille de l'icône */
+  color: #5d6d7e; /* Couleur de l'icône */
+}
+
+.user-icon .username {
+  margin-bottom: 10px;
+  font-weight: bold; /* Texte en gras */
+  color: #5d6d7e; /* Couleur du texte */
+}

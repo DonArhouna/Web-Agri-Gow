@@ -1,25 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { ApiService } from './api.service';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
-
-export class AppComponent implements OnInit {
-  title = 'Welcome';
-  localites: any[] = [];
-
-  constructor(private apiService: ApiService) {}
-
-  ngOnInit(): void {
-    this.apiService.getLocalites().subscribe(data => {
-      this.localites = data;
-    });
-  }
+export class AppComponent {
+  title = 'dashboard';
 }
-

@@ -12,5 +12,6 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
         server: ftp.sniatech.com
-        username: myFtpUserName
-        password: ${{ secrets.ftp_password }}
+        username: agriconnect@agrigovconnect.sniatech.com
+        # password: /*${{ secrets.ftp_password }}*\
+        password: bkS0kWR$)cUf

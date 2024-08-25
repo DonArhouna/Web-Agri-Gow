@@ -1,0 +1,102 @@
+body {
+  overflow-x: hidden;
+}
+/* Container principal */
+.container-fluid {
+  margin-top: 50px;
+  margin-left: 250px; /* Ajustez cette valeur selon la largeur de votre sidebar */
+  padding: 20px;
+  box-sizing: border-box; /* Assurez-vous que le padding est inclus dans la largeur totale */
+  overflow-x: hidden; /* Éviter le défilement horizontal dans le conteneur */
+
+}
+
+/* Section principale */
+.main {
+  background-color: #fbfcfc;
+  padding: 20px;
+}
+
+/* Carrousel */
+.carousel {
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+.carousel-item img {
+  max-height: 350px; /* Ajustez la hauteur si nécessaire */
+  object-fit: cover;
+}
+
+
+.carousel-item img {
+  border-radius: 10px;
+  max-height: 350px; /* Augmentez la hauteur du carrousel */
+  object-fit: cover; /* Recadre l'image pour qu'elle remplisse l'espace sans déformer */
+  width: 100%; /* Assurez-vous que l'image prend toute la largeur du carrousel */
+}
+
+/* Fil d'actualité */
+.news-feed {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Conteneur des cartes */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Espace entre les cartes */
+  margin-bottom: 20px; /* Espace entre les cartes et le carrousel */
+}
+
+/* Cartes génériques (pour le Fil d'actualité) */
+.carder {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: calc(25% - 20px); /* Largeur des cartes avec espace entre elles */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Inclut les bordures et le padding dans la largeur */
+}
+
+/* Cartes pour les sections Événements et Subventions */
+.events-section, .subventions-section {
+  margin-top: 20px;
+}
+
+.events-section p, .subventions-section p {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px; /* Espace entre le titre et les cartes */
+}
+
+.card {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: calc(33.33% - 20px); /* Largeur des cartes avec espace entre elles */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Inclut les bordures et le padding dans la largeur */
+  margin-bottom: 20px; /* Espace entre les cartes */
+}
+
+.card-img-top {
+  width: 100%; /* Assurez-vous que l'image prend toute la largeur de la carte */
+  height: 12rem; /* Ajustez la hauteur de l'image */
+  object-fit: cover; /* Maintient les proportions de l'image */
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card-body {
+  padding: 1rem;
+}
+
+.card-text {
+  font-size: 14px;
+}

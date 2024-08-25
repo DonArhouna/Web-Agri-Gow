@@ -1,0 +1,64 @@
+/*  la sidebar prend toute la hauteur de la page */
+.min-vh-100 {
+  min-height: 100vh;
+}
+
+/* Autres styles pour la sidebar */
+.bg-dark {
+  background-color: #fbfcfc !important;
+  height: 100vh; /* Hauteur totale */
+  position: fixed; /* Position fixe pour la sidebar */
+  top: 0;
+  left: 0;
+  width: 250px; /* Ajustez selon vos besoins */
+}
+
+/* Styles pour le logo dans la sidebar */
+.logo-icon {
+  height: 40px; /* Ajustez la taille du logo selon vos besoins */
+  margin-right: 10px; /* Espacement entre le logo et le texte */
+}
+
+/* Styles pour les éléments de la sidebar */
+.nav-item li {
+  margin-bottom: 20px; /* Espacement entre les éléments */
+  margin-top: 25px;
+}
+
+.nav-link {
+  color: #3e3f3f; /* Couleur des éléments du menu (gris clair) */
+  padding: 10px; /* Ajouter du padding autour des éléments */
+  border-radius: 8px; /* Bordures arrondies pour les éléments */
+  transition: background-color 0.3s ease; /* Transition douce pour le survol */
+  
+}
+
+/* Couleur du texte et du cadre au survol */
+.nav-link:hover {
+  width: 200px;
+  background-color: #d6eaf8; /* Cadre bleu ciel au survol */
+  color: #3e3f3f; /* Garder la couleur du texte au survol */
+}
+
+/* Couleur des icônes dans les éléments du menu */
+.nav-link i {
+  color: #494848; /* Couleur des icônes */
+}
+
+/* Couleur des icônes au survol */
+.nav-link:hover i {
+  color: #494848; /* Garder la couleur des icônes au survol */
+}
+
+/* Couleur des sous-menus */
+.nav-pills .nav-link.active {
+  color: #fff; /* Couleur du texte actif */
+  background-color: #333; /* Couleur de fond du texte actif (peut être modifiée) */
+}
+
+/* Nom de l'application */
+.text-white .fs-5 {
+  color: #2e4053 ; /* Couleur du texte en noir */
+  font-weight: bold; /* Mettre le texte en gras */
+  font-family: 'Arial', sans-serif; /* Changer la police de texte si nécessaire */
+}

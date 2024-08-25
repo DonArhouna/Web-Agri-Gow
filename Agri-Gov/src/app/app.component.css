@@ -1,0 +1,60 @@
+/* navbar.component.css */
+
+/* Hauteur et positionnement de la navbar */
+.navbar {
+  background-color: #aed6f1 !important; /* Couleur de fond */
+  position: fixed; /* Fixer la position de la navbar */
+  top: 0;
+  left: 250px; /* Positionné à droite de la sidebar */
+  width: calc(100% - 250px); /* Ajuster la largeur en fonction de la sidebar */
+  height: 80px; /* Hauteur de la navbar, ajustez selon vos besoins */
+  z-index: 1000; /* Assurez-vous que la navbar est au-dessus des autres éléments */
+}
+
+/* Conteneur principal pour le positionnement */
+.container-fluid {
+  display: flex;
+  align-items: center; /* Centrer verticalement */
+  height: 100%; /* Hauteur complète de la navbar */
+}
+
+/* Formulaire de recherche */
+.search-form {
+  margin-left: 0; /* Positionner à gauche complètement */
+  margin-right: auto; /* Écarter des autres éléments à droite */
+}
+
+.input-group {
+  display: flex;
+  align-items: center; /* Centrer verticalement */
+}
+
+.input-group .form-control {
+  border-radius: 25px; /* Bordures arrondies du champ de recherche */
+  border: 1px solid #ced4da; /* Bordure de champ */
+  padding-right: 40px; /* Espace pour l'icône à droite */
+}
+
+.input-group .input-group-text {
+  border: none; /* Enlever la bordure de l'icône */
+  background: transparent; /* Fond transparent */
+  padding: 0; /* Enlever le padding */
+  position: absolute;
+  right: 10px; /* Positionner l'icône à droite */
+}
+
+.input-group .bi-search {
+  font-size: 18px; /* Taille de l'icône */
+  color: #495057; /* Couleur de l'icône */
+}
+
+/* Icône utilisateur */
+.user-icon {
+  display: flex;
+  align-items: center; /* Centrer verticalement */
+  margin-left: auto; /* Pousser à droite */
+}
+
+.user-icon img {
+  border-radius: 50%; /* Rendre l'image ronde */
+}
